@@ -1,0 +1,220 @@
+{
+  "project_title": "Awwwards Site-of-the-Day Creative Developer Portfolio",
+  "art_direction": {
+    "theme": "Midnight Navy & Mint Cosmic Cyberpunk Elegance",
+    "mode": "Dark mode default with seamless Light mode toggle",
+    "dark_theme": {
+      "base_bg": "#0A1128",
+      "surface_bg": "rgba(15, 23, 42, 0.75)",
+      "card_bg": "rgba(16, 30, 66, 0.5)",
+      "border_color": "rgba(56, 189, 248, 0.15)",
+      "text_primary": "#F0F9FF",
+      "text_secondary": "#94A3B8",
+      "accent_sky": "#38BDF8",
+      "accent_mint": "#34D399",
+      "accent_deep_blue": "#1E3A8A",
+      "glow_sky": "rgba(56, 189, 248, 0.35)",
+      "glow_mint": "rgba(52, 211, 153, 0.35)"
+    },
+    "light_theme": {
+      "base_bg": "#F8FAFC",
+      "surface_bg": "rgba(255, 255, 255, 0.85)",
+      "card_bg": "rgba(240, 249, 255, 0.7)",
+      "border_color": "rgba(56, 189, 248, 0.25)",
+      "text_primary": "#0F172A",
+      "text_secondary": "#475569",
+      "accent_sky": "#0284C7",
+      "accent_mint": "#059669",
+      "accent_deep_blue": "#2563EB",
+      "glow_sky": "rgba(2, 132, 199, 0.15)",
+      "glow_mint": "rgba(5, 150, 105, 0.15)"
+    }
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Cabinet Grotesk, Outfit, sans-serif",
+      "hero_h1": "text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-none",
+      "section_h2": "text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight",
+      "card_h3": "text-xl sm:text-2xl font-semibold tracking-tight"
+    },
+    "body": {
+      "font_family": "Plus Jakarta Sans, Inter, sans-serif",
+      "text": "text-base sm:text-lg leading-relaxed text-muted-foreground"
+    },
+    "code_mono": {
+      "font_family": "JetBrains Mono, Fira Code, monospace",
+      "text": "text-xs sm:text-sm tracking-wide"
+    }
+  },
+  "signature_visuals": {
+    "canvas_particle_system": {
+      "description": "Full-screen fixed canvas background with floating glowing particles",
+      "particle_colors": ["#38BDF8", "#F0F9FF", "#34D399", "#6EE7B7"],
+      "particle_count": 80,
+      "particle_speed": 0.4,
+      "interactive_repulsion": true,
+      "connection_lines": true,
+      "max_connection_distance": 120
+    },
+    "css_sparkle_layer": {
+      "description": "Subtle starry twinkling grid overlay with noise texture and radial glowing spotlights behind hero and bento grids"
+    },
+    "editorial_marquee": {
+      "text": "CREATIVE DEVELOPER • FULL-STACK ENGINEER • WEBGL & SHADERS • HIGH-PERFORMANCE SAAS • DISTRIBUTED SYSTEMS • UI MOTION DESIGN",
+      "style": "Slow drift marquee with giant outlined text, low contrast pastel background, and mint/sky glowing indicators"
+    }
+  },
+  "layout_architecture": {
+    "navigation": {
+      "type": "Sticky glassmorphism header with z-50",
+      "logo_mark": "Custom SVG geometric diamond code-bracket icon",
+      "wordmark": "ALEXANDER VEX • CREATIVE ENG",
+      "nav_links": [
+        {"name": "About", "href": "#about", "data_testid": "nav-link-about"},
+        {"name": "Skills", "href": "#skills", "data_testid": "nav-link-skills"},
+        {"name": "Projects", "href": "#projects", "data_testid": "nav-link-projects"},
+        {"name": "Contact", "href": "#contact", "data_testid": "nav-link-contact"}
+      ],
+      "actions": [
+        {"type": "theme_toggle", "data_testid": "theme-toggle-btn"},
+        {"type": "resume_cta", "label": "Get Resume", "data_testid": "nav-resume-btn"}
+      ]
+    },
+    "hero_section": {
+      "headline_lines": [
+        "ARCHITECTING DIGITAL",
+        "EXPERIENCES THAT BREATHE & ACCELERATE"
+      ],
+      "subheadline": "Senior Creative Developer & Full-Stack Architect blending high-frequency frontend art with resilient cloud infrastructure.",
+      "interactive_elements": [
+        {"type": "cta_primary", "label": "Explore Showcase", "data_testid": "hero-primary-cta"},
+        {"type": "cta_secondary", "label": "Schedule Call", "data_testid": "hero-secondary-cta"},
+        {"type": "3d_parallax_card", "description": "Tilt-responsive 3D code snippet card with live FPS and memory stats"}
+      ]
+    },
+    "skills_bento_grid": {
+      "mode": "Tetris Grid (12 cols)",
+      "cards": [
+        {
+          "title": "Frontend & WebGL Mastery",
+          "span": "col-span-12 md:col-span-8 row-span-2",
+          "tags": ["React 19", "Three.js", "Framer Motion", "Tailwind CSS", "Next.js 15", "TypeScript"],
+          "data_testid": "skills-card-frontend"
+        },
+        {
+          "title": "Backend Architecture",
+          "span": "col-span-12 md:col-span-4 row-span-1",
+          "tags": ["Node.js", "FastAPI", "Python", "GraphQL", "PostgreSQL", "Redis"],
+          "data_testid": "skills-card-backend"
+        },
+        {
+          "title": "Cloud & DevOps",
+          "span": "col-span-12 md:col-span-4 row-span-1",
+          "tags": ["Docker", "Kubernetes", "AWS", "Vercel", "CI/CD Pipeline"],
+          "data_testid": "skills-card-cloud"
+        },
+        {
+          "title": "Performance & Security",
+          "span": "col-span-12 md:col-span-6 row-span-1",
+          "tags": ["Sub-100ms LCP", "WebGL GPU Shaders", "Zero-Trust Auth", "APCA Contrast"],
+          "data_testid": "skills-card-perf"
+        },
+        {
+          "title": "Design Systems & UI Engineering",
+          "span": "col-span-12 md:col-span-6 row-span-1",
+          "tags": ["Shadcn/UI", "Radix Primitives", "Micro-Interactions", "Accessibility WCAG AA"],
+          "data_testid": "skills-card-design"
+        }
+      ]
+    },
+    "projects_showcase": {
+      "filters": ["All", "Full-Stack SaaS", "Creative WebGL", "AI Tools", "Design Systems"],
+      "items": [
+        {
+          "id": "proj-1",
+          "title": "Aura AI — Generative Canvas Workspace",
+          "category": "Creative WebGL",
+          "description": "Spatial AI studio allowing users to generate and manipulate 3D nodes with real-time WebGL rendering.",
+          "image_url": "https://images.unsplash.com/photo-1656231267330-f605c1c16a57?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwzfHxkYXJrJTIwbW9kZSUyMHdlYiUyMGFwcCUyMFVJJTIwZGVzaWduJTIwbW9ja3VwfGVufDB8fHx8MTc5MzcxMDk0NXww&ixlib=rb-4.1.0&q=85",
+          "tech_stack": ["React", "Three.js", "FastAPI", "Tailwind CSS"],
+          "data_testid": "project-item-aura"
+        },
+        {
+          "id": "proj-2",
+          "title": "Nexus Financial — Dark Engine Analytics",
+          "category": "Full-Stack SaaS",
+          "description": "High-frequency crypto and stock portfolio analytics dashboard with real-time WebSocket feeds.",
+          "image_url": "https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwxfHxkYXJrJTIwbW9kZSUyMHdlYiUyMGFwcCUyMFVJJTIwZGVzaWduJTIwbW9ja3VwfGVufDB8fHx8MTc5MzcxMDk0NXww&ixlib=rb-4.1.0&q=85",
+          "tech_stack": ["TypeScript", "Recharts", "Node.js", "Redis"],
+          "data_testid": "project-item-nexus"
+        },
+        {
+          "id": "proj-3",
+          "title": "Synthwave Copilot — AI Voice & Chat Assistant",
+          "category": "AI Tools",
+          "description": "Context-aware developer copilot with dynamic soundwave particle visualization.",
+          "image_url": "https://images.pexels.com/photos/30530409/pexels-photo-30530409.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "tech_stack": ["React 19", "Web Audio API", "Python", "Tailwind"],
+          "data_testid": "project-item-synthwave"
+        },
+        {
+          "id": "proj-4",
+          "title": "Kinetix — Fluid Physics UI Kit",
+          "category": "Design Systems",
+          "description": "Open-source motion library and micro-interaction suite for modern web applications.",
+          "image_url": "https://images.unsplash.com/photo-1720135885007-454165745e21?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwyfHxkYXJrJTIwbW9kZSUyMHdlYiUyMGFwcCUyMFVJJTIwZGVzaWduJTIwbW9ja3VwfGVufDB8fHx8MTc5MzcxMDk0NXww&ixlib=rb-4.1.0&q=85",
+          "tech_stack": ["Framer Motion", "Tailwind CSS", "Storybook"],
+          "data_testid": "project-item-kinetix"
+        }
+      ]
+    },
+    "contact_section": {
+      "status_badge": "Available for Q3/Q4 Senior Roles & Consulting",
+      "form_fields": [
+        {"name": "name", "label": "Your Name", "type": "text", "data_testid": "contact-input-name"},
+        {"name": "email", "label": "Email Address", "type": "email", "data_testid": "contact-input-email"},
+        {"name": "project_type", "label": "Project Scope", "type": "select", "options": ["Full-Stack App", "Creative Portfolio/WebGL", "AI Integration", "Technical Advisory"], "data_testid": "contact-select-scope"},
+        {"name": "message", "label": "Project Details", "type": "textarea", "data_testid": "contact-input-message"}
+      ],
+      "submit_button": {"label": "Transmit Message", "data_testid": "contact-submit-btn"},
+      "social_links": [
+        {"name": "GitHub", "url": "https://github.com", "data_testid": "social-github"},
+        {"name": "LinkedIn", "url": "https://linkedin.com", "data_testid": "social-linkedin"},
+        {"name": "Twitter / X", "url": "https://x.com", "data_testid": "social-twitter"},
+        {"name": "ReadCV", "url": "https://read.cv", "data_testid": "social-readcv"}
+      ]
+    }
+  },
+  "image_urls": {
+    "developer_portrait": "https://images.unsplash.com/photo-1752859951149-7d3fc700a7ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMGRldmVsb3BlciUyMHBvcnRyYWl0JTIwbmVvbiUyMGJsdWUlMjBkYXJrfGVufDB8fHx8MTc5MzcxMDkzOHww&ixlib=rb-4.1.0&q=85",
+    "workspace_night": "https://images.unsplash.com/photo-1777861845854-4f35ab170680?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwyfHxjcmVhdGl2ZSUyMGRldmVsb3BlciUyMHBvcnRyYWl0JTIwbmVvbiUyMGJsdWUlMjBkYXJrfGVufDB8fHx8MTc5MzcxMDkzOHww&ixlib=rb-4.1.0&q=85",
+    "developer_coding": "https://images.unsplash.com/photo-1737575655055-e3967cbefd03?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwzfHxjcmVhdGl2ZSUyMGRldmVsb3BlciUyMHBvcnRyYWl0JTIwbmVvbiUyMGJsdWUlMjBkYXJrfGVufDB8fHx8MTc5MzcxMDkzOHww&ixlib=rb-4.1.0&q=85",
+    "project_aura": "https://images.unsplash.com/photo-1656231267330-f605c1c16a57?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwzfHxkYXJrJTIwbW9kZSUyMHdlYiUyMGFwcCUyMFVJJTIwZGVzaWduJTIwbW9ja3VwfGVufDB8fHx8MTc5MzcxMDk0NXww&ixlib=rb-4.1.0&q=85",
+    "project_nexus": "https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwxfHxkYXJrJTIwbW9kZSUyMHdlYiUyMGFwcCUyMFVJJTIwZGVzaWduJTIwbW9ja3VwfGVufDB8fHx8MTc5MzcxMDk0NXww&ixlib=rb-4.1.0&q=85",
+    "project_synthwave": "https://images.pexels.com/photos/30530409/pexels-photo-30530409.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "project_kinetix": "https://images.unsplash.com/photo-1720135885007-454165745e21?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwyfHxkYXJrJTIwbW9kZSUyMHdlYiUyMGFwcCUyMFVJJTIwZGVzaWduJTIwbW9ja3VwfGVufDB8fHx8MTc5MzcxMDk0NXww&ixlib=rb-4.1.0&q=85"
+  },
+  "instructions_to_main_agent": [
+    "Ensure the Canvas particle system is rendered on a fixed background canvas behind all DOM elements, with mouse repulsion and subtle connection lines.",
+    "Implement Framer Motion scroll-triggered reveals with staggered child delays across all section titles, bento cards, and project items.",
+    "Strictly follow JavaScript (.js/.jsx) React syntax (do not use TypeScript .tsx files).",
+    "Add data-testid attributes to all buttons, links, inputs, and interactive cards for seamless automated testing.",
+    "Use Sonner toast notifications when users copy email or submit the contact form.",
+    "Ensure dark mode is default (`dark` class on root html/body) with a smooth light mode toggle.",
+    "Ensure high contrast APCA standards for all text over particle and glowing gradient surfaces."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 etc for icons. Use lucide-react icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "All interactive and key informational elements MUST include data-testid attribute."
+  ]
+}
